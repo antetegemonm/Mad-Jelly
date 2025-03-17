@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+main{
+    width:100%;
+    flex:1;
+}
+
+nav {
+    
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; /* Fixa o nav no topo */
+    top: 0; /* Coloca o nav no topo da tela */
+    left: 0; /* Alinha o nav à esquerda */
+    z-index: 1000; /* Garante que o nav fique por cima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: Adiciona sombra ao nav */
+
+   
+   
+}
+
+.navigation {
+    color: #E1B84F;
+    font-size: 1.2vw;
+    width: 97vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+   
+}
+
+a{
+    text-decoration: none;
+    color:#E1B84F;
+}
+a:hover{
+   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navigation img{
+    width:10vw;
+    height: 11vh;
+}
+
+.secao-direita {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+#titulo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo h1{
+    font-size: 4vh;
+    text-align: center;
+    margin-left: 11%;
+    max-width: 60%;
+    
+}
+
+.produto{
+    margin-left: 25%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infos{
+    margin-right: 3vw;
+    width: 30%;
+    height: 25vh;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+   
+}
+#preco{
+display: flex;
+align-items:end;
+gap:5px;
+}
+
+#preco h4{
+    font-size: 2vw;
+    font-weight: bold;
+    }
+
+    #preco p{
+        font-size: 1vw;
+    }
+
+#parcela{
+    border-bottom: solid 1px #F5F5F5;
+}
+#parcela p{
+    font-size: 1vw;
+}
+img{
+    width: 40vw;
+    height: 67vh;
+}
+
+
+
+
+
+#add-carrinho {
+    margin-top: 2vh;
+    width: 13vw;
+    height: 5vh;
+    background-color: #E1B84F;
+    border-radius: 0.4vw;
+    border: none;
+    color: #fff;
+    font-size: 1vw;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+#add-carrinho:hover {
+    background-color: #CFAE42;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+footer{
+    margin-top: 60px;
+    width: 100%;
+    height: 20vh;
+    background-color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 100px 20px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}

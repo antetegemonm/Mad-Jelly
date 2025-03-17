@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="navigation">
+                <div class="secao-esquerda">
+                    <a href="Principal.html"><p> HOME </p></a>
+                </div>
+                <img src="imgs/Logo.png">
+                <div class="secao-direita">
+                    <a href="Login.html"><p>LOGIN</p></a>
+                    <a href="Carrinho.html"><img src="imgs/carrinho.png"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cadastro-container">
+            <form action="#" method="POST">
+                <h2>Cadastro</h2>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+                
+                <a href="Principal.html"><button type="submit">Cadastrar</button></a>
+                
+                
+            </form>
+        </div>
+        <p>Já tem uma conta? <a href="Login.html">Faça login</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

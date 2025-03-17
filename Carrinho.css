@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+main{
+    width:100%;
+    flex:1;
+}
+
+nav {
+    
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; /* Fixa o nav no topo */
+    top: 0; /* Coloca o nav no topo da tela */
+    left: 0; /* Alinha o nav à esquerda */
+    z-index: 1000; /* Garante que o nav fique por cima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: Adiciona sombra ao nav */
+
+   
+   
+}
+
+.navigation {
+    color: #E1B84F;
+    font-size: 1.2vw;
+    width: 97vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+   
+}
+
+a{
+    text-decoration: none;
+    color:#E1B84F;
+}
+a:hover{
+   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navigation img{
+    width:10vw;
+    height: 11vh;
+}
+
+.secao-direita {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+}
+
+#lista-carrinho{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    margin-left: 20px;
+    display: flex;
+    
+}
+
+li:not(:first-child) {
+    margin-top: 50px;
+}
+
+img{
+border-radius: 10px;
+width:200px;
+height: 200px;
+
+}
+
+.infos{
+    margin-left:20px ;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+
+.button-remover{
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+
+    background-color: #E1B84F;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color:#fff;
+}
+
+.button-remover:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#total{
+    font-size: 24px;
+    margin-left: 50px;
+}
+
+#limpar-carrinho{
+    margin-right: 80px;
+    width: 200px;
+    height: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    border-radius: 8px;
+    border:none;
+    color:#CFAE42;
+    transition: 200ms;
+
+}
+
+#limpar-carrinho:hover{
+    cursor:pointer;
+    width: 205px;
+    height: 35px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+#gerar-pix{
+    margin-top: 2vh;
+    width: 13vw;
+    height: 5vh;
+    background-color: #E1B84F;
+    border-radius: 0.4vw;
+    border: none;
+    color: #fff;
+    font-size: 1vw;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+#gerar-pix:hover{
+    background-color: #CFAE42;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo do modal */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* Inicialmente escondido */
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+#qr-code {
+    width: 250px;
+    height: 250px;
+    margin: 20px 0;
+}
+
+
+
+
+footer{
+    margin-top: 60px;
+    width: 100%;
+    height: 150px;
+    background-color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 100px 20px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}

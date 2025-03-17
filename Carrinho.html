@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="Carrinho.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <div class="secao-esquerda">
+                    <a href="Principal.html"><p> HOME </p></a>
+                </div>
+                <img src="imgs/Logo.png">
+                <div class="secao-direita">
+                    <a href="Login.html"><p>LOGIN</p></a>
+                    <a href="Carrinho.html"><img src="imgs/carrinho.png"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <h1>Meu Carrinho</h1>
+    <div class="container">
+
+    <ul id="lista-carrinho"></ul>
+
+    <div class="total">
+    <p id="total"> R$ 0,00</p>
+    <button id="limpar-carrinho">Limpar Carrinho</button>
+
+    <button id="gerar-pix">Gerar QR Code Pix</button>
+
+<!-- Modal que aparecerá sobre a tela -->
+<div id="overlay" class="overlay">
+    <div class="qr-container">
+        <h2>Pagamento via Pix</h2>
+        <img id="qr-code" src="imgs/qrcode-pix.png" alt="QR Code">
+        
+    </div>
+</div>
+
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+
+    <div class="contacts">
+    <p>Número de telefone : +55 (19) 99999-1234</p>
+    <p>Email : MADJELLY@gmail.com</p>
+    <p>Endereço: Rua das bananas peludas, n°69, Anta Gorda - RS </p>
+
+    </div>
+
+    <div class="social-media">
+    <p>INSTAGRAM</p>
+    <p>FACEBOOK</p>
+    <p>YOUTUBE</p>
+
+    </div>
+
+    <div class="links">
+    <a>HOME</a>
+    <a>CARRINHO</a>
+    <a>LOGIN</a>
+
+    </div>
+      
+    </footer>
+    <script src="Carrinho.js"></script>
+  
+</body>
+</html>
