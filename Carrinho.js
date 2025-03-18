@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const botaoLimpar = document.getElementById("limpar-carrinho");
     const botaoGerarPix = document.getElementById("gerar-pix");
     const overlay = document.getElementById("overlay");
-    const fechar = document.getElementById("fechar");
+
 
     let carrinho = JSON.parse(sessionStorage.getItem("carrinho")) || [];
 
@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         carrinho.forEach((produto, index) => {
             let item = document.createElement("li");
+            
             item.innerHTML = `
                 <div class="imagem">
                 <img src="${produto.imagem}" >
